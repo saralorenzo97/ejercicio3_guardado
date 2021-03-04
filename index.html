@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    span.efecto{
+        color: rgb(58, 216, 228);
+        font-family: 'trebuchet ms', 'lucida sans unicode', 'lucida grande', 'lucida sans', arial, sans-serif;
+        font-size: large;
+    }
+    
+    a{
+        text-decoration: none;
+        background-color: slateblue;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 30px;
+    }
+    a:hover{
+        background-color: rgb(120, 191, 219);
+    }
+a.botoncito{
+text-decoration: none;
+background-color: rgb(120, 191, 219);
+color: white;
+padding: 10px 20px;
+border-radius: 30px;
+margin-left: 10px; margin-right: 10px;
+}
+a.botoncito:hover{
+    background-color: slateblue;
+}
+#capa{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 300px;
+    background-color: rgb(228, 196, 228);
+    z-index: 10;
+}
+#capauno{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    width: 300px;
+    background-color: rgb(150, 112, 150);
+    z-index: 5;
+}
+#yorelativo{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    
+}
+#capauno:hover{
+    z-index: 15;
+}
+#tablita{
+    margin-top: 300px;
+    text-align: center;
+}
+td{
+    color: rgb(97, 65, 87);
+}
+#cuarto:hover{
+    background-color: rosybrown;
+}
+tr:hover{
+    background-color: salmon;
+}
+.fotico{
+    border-radius: 50px 50px 50px 50px;
+    height: 75px;
+    margin: 30px;
+    border: 2px solid white;
+}
+.fotico:hover{
+    border: 2px solid pink;
+}
+</style>
+<body>
+
+    <br>
+    <a  class="botoncito" href="https://www.visitacabaneros.es">Mi parque</a>
+    <a  href="https://www.google.es">Google</a>
+    <a  class="botoncito" href="https://www.visitacabaneros.es">Mi parque</a>
+<div id="capa">
+    <h1>Estoy dentro de la capa</h1>
+    <p>sigo dentro de ella</p>
+</div>
+    <div id="capauno">
+        <h1>Estoy dentro de la capa</h1>
+        <p>sigo dentro de ella</p>
+        <h3 id="yorelativo">soy relativo</h3>
+</div>
+<br>
+<p>El verdadero mal de la vejez no es el <span class="efecto">debilitamiento del cuerpo</span> sino la <span class="efecto">indiferemcia del alma</span>.</p>
+<br>
+<br>
+<center><table id="tablita" border="1">
+    <tr>
+       <td colspan="5"
+       style="background-color: rgb(201, 115, 132);">PRIMERA TABLA</td>
+    </tr>
+    <tr>
+        <td>Horario</td>
+        <td>Nombre</td>
+        <td>Asiste</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Primero</td>
+        <td>Segundo</td>
+        <td>Tercero</td>
+        <td id="cuarto">Cuarto</td>
+        <td>Quinto</td>
+
+    </tr>
+    <tr>
+        <!--<td>primero</td>-->
+        <td>Segundo</td>
+        <td>Tercero</td>
+        <td>Cuarto</td>
+        <td>Quinto</td>
+    </tr>
+    <tr>
+        <td>Primero</td>
+        <td>Segundo</td>
+        <td>Tercero</td>
+        <td>Cuarto</td>
+        <td>Quinto</td>
+    </tr>
+    <tr>
+        <td>Primero</td>
+        <td>Segundo</td>
+        <td>Tercero</td>
+        <td>Cuarto</td>
+        <td>Quinto</td>
+    </tr>
+</table></center>
+<br>
+<img src="1.jpg" alt="" class="fotico">
+<img src="2.jpg" alt="" class="fotico">
+<img src="3.jpg" alt="" class="fotico">
+<img src="4.jpg" alt="" class="fotico">
+<img src="5.jpg" alt="" class="fotico">
+<img src="6.jpg" alt="" class="fotico">
+<img src="7.jpg" alt="" class="fotico">
+
+</body>
+</html>
